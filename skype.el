@@ -559,7 +559,7 @@ The argument USER-HANDLE can be `skype-user' object."
         (setq viewtext
               (concat name " " 
                       (skype--icon status-name (skype-status-icon status-obj))
-                      (if (> (length mood-text) 0) 
+                      (if (> (length mood-text) 9999) 
                           (concat " < " mood-text))))
         (setf (skype-user-t-viewtext obj) viewtext)
         viewtext))))
